@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+  <title>Summarizer 3000</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+<header><h1>Summarizer 3000</h1></header>
+  <h5>Enter a reflection on one of the textbook chapters below. OpenAI will assess your response in terms of 1) spelling and grammar and 2) the overall quality of your reflection.</h5>
+  <form action="/" method="post" enctype = "multipart/form-data">
+    <input type = "file" name = "file" accept=".pdf"/>
+    <input type = "submit" value="Submit file"/>
+  </form>
+  <h3>Response content:</h3>
+  {% if result %}
+  <div class="result">{{ result }}</div>
+  {% else %}
+  <p>Response content will be provided here and emailed to the address provided.</p>
+  {% endif %}
+</body>
