@@ -13,25 +13,21 @@
     font-weight: bold;
     font-style: normal;
   }
-  body,
-  input {
-    font-size: 16px;
-    line-height: 24px;
-    color: #353740;
+  body {
+    background-color: #faf7ef !important;
     font-family: "ColfaxAI", Helvetica, sans-serif;
   }
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 60px;
+
+  p {
+    color: #faf7ef !important;
+    padding: auto;
   }
 
   h3 {
     font-size: 28px;
     line-height: 40px;
     font-weight: bold;
-    color: #202123;
+    color: #faf7ef !important;
     margin: 16px 0 8px;
   }
   
@@ -40,46 +36,54 @@
     padding: 5px;
     text-align: justify;
   }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    width: 50%;
-  }
-  
-  ::placeholder {
-    color: #8e8ea0;
-    opacity: 1;
-  }
+
   input[type="submit"] {
     margin-top: 10px;
     padding: 12px;
+    /* position:absolute; */
     width: 30%;
-    color: #fff;
-    background-color: #10a37f;
+    color: #faf7ef;
+    background-color: #1b7865;
+    align-content: center;
     border: none;
     border-radius: 24px;
     text-align: center;
     cursor: pointer;
   }
-  .result {
-    margin-top: 20px;
-    margin-left: 220px;
-    margin-right: 220px;
-    padding: 20px;
-    max-width: 50%;
+
+  input[type="submit"]:hover {
+    outline: 2px solid #faf7ef;
+    border-radius: 24px;
+
   }
+
+  input[type="file"] {
+    margin: auto;
+    padding: 12px;
+    align-content: center;
+    border: none;
+    cursor: pointer;
+    color: #faf7ef;
+} 
+  .upload {
+    padding: 24px;
+    align-content: center;
+    border-radius: 24px;
+    background: #213c4c;
+    margin-bottom: 24px;
+  }
+
   header {
     width: 100%;
-    background-color: rgb(136, 88, 143);
-    color:#fff;
+    background-color: #213c4c;
+    color:#faf7ef;
     font-size: 20px;
     font-weight: bold;
     padding: 20px;
     text-align: center;
+    margin-bottom: 20px;
   }
 
   h1 {
-    color: #ffffff;
+    color: #faf7ef;
   }
