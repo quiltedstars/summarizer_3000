@@ -75,25 +75,6 @@ flask run
 
 Click the link that follows "*Running on" in order to access the local server and to view the app.
 
-### In order to edit the appearance of the app
->To edit css
-
-Open the folder _static_. There is an icon and a logo that can be replaced (be sure to edit the image names in _main.css_!). To edit the css code, edit _main.css_.
-
->To edit html
-
-Open the folder _templates_. _index.html_ is where you can edit the html.
-
->To edit other facets
-
-To edit the python script: Edit _app.py_
-
-Edit the sql schema that collects data: Edit _schema.sql_
-
->**NOTE: Editing schema.sql may cause the app to do unexpected things if init_db.py remains unchanged. Proceed with caution!**
-
-The rest of the files are files that are created by the app: \_\_pycache__, database.db.
-
 
 ## Contributing
 1. Fork the repository
