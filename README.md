@@ -8,13 +8,23 @@ Many students entering University are often overwhelmed by learning how to read 
 
 ## Current issues
 
-- [ ] Some PDFs fail to upload, likely due to being improperly extracted (possibly needs to restrict and remove headers?)
+- [ ] Need to add an auto-return page if a PDF that is too long is submitted. Currently kicks to an internal server error, see above.
 
-- [ ] Need to add an auto-return page if an improper document or a blank field is submitted. Corrected through requiring a file, but the improper document kicks to an internal server error, see above.
+The code implies I need to change the limit for tokens...so perhaps the chunking is not working entirely right:
 
-- [ ] Update css and html
+```
+{'message': "This model's maximum context length is 16385 tokens. However, your messages resulted in 18130 tokens. Please reduce the length of the messages.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+```
 
 - [ ] Could not get the js script to remove the query url, as when it worked the result did not appear on the site... a limitation of my knowledge of javascript and bothered me too much that I had to leave it alone
+
+- [ ] Currently the response does not include line breaks. Need to fix: the result in GET does not include line breaks even though it was specified in the prompt.
+
+- [x] Update css and html
+
+- [x] Some PDFs fail to upload, likely due to being improperly extracted (possibly needs to restrict and remove headers?)
+
+    The reason why is a document may be too long, need to fix per first issue.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
