@@ -1,6 +1,6 @@
 # The Summarizer 3000: _It's better than 2000_
 
-A Flask app to summarize PDF articles.
+A Flask app to summarize PDF articles. This is a final project for a course I am in. I am not a professional. You probably shouldn't use this code.
 
 ## Purpose
 
