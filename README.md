@@ -56,7 +56,7 @@ source .zshrc
 
 ### Clone and enter the repository
 ```bash
-git clone https://github.com/quiltedstars/summarizer_3000 && cd rebtrainer
+git clone https://github.com/quiltedstars/summarizer_3000 && cd summarizer_3000
 ```
 ### Create a .env file with Flask information and optionally your API key
 ```bash
